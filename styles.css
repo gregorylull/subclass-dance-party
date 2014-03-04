@@ -30,3 +30,19 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.bounce{
+  border:20px groove green;
+  border-radius:5px;
+  position:relative;
+  left:20;
+  right:20;
+}
+
+.bouncyPeanuts{
+  position:relative;
+  left:20;
+  right:20;
+  width:100px;
+  height:100px;
+}
