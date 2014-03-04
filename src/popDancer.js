@@ -1,4 +1,4 @@
-var BlinkyDancer = function(top, left, timeBetweenSteps){
+var PopDancer = function(top, left, timeBetweenSteps){
 
   Dancer.call(this, top, left, timeBetweenSteps);
 
@@ -10,13 +10,13 @@ var BlinkyDancer = function(top, left, timeBetweenSteps){
 
 
 
-BlinkyDancer.prototype = Object.create(Dancer.prototype);
+PopDancer.prototype = Object.create(Dancer.prototype);
 
-BlinkyDancer.prototype.constructor = BlinkyDancer;
+PopDancer.prototype.constructor = PopDancer;
 
-BlinkyDancer.prototype.step = function(){
+PopDancer.prototype.step = function(){
 
   Dancer.prototype.step.call(this);
 
-  this.$node.toggle();
+  this.$node.slideToggle("slow");
 };
