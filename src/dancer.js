@@ -1,11 +1,3 @@
-//Our plan of attack:
-//  Refactor to pseudoclassical form.
-//  check specrunner to see if some checkboxes work.
-//  then go to blinkydancer and refactor that one
-//  check bookstrap for more instructions/directions
-
-
-
 // Creates and returns a new dancer object that can step
 var Dancer = function(top, left, timeBetweenSteps){
   this._timeBetweenSteps = timeBetweenSteps;
@@ -19,7 +11,6 @@ var Dancer = function(top, left, timeBetweenSteps){
   // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote
   // this one sets the position to some random default point within the body
   this.setPosition(top, left);
-
 };
 
 Dancer.prototype.step = function(){
@@ -42,4 +33,3 @@ Dancer.prototype.setPosition = function(top, left){
   };
   this.$node.css(styleSettings);
 };
-
