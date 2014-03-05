@@ -30,5 +30,15 @@ $(document).ready(function(){
     );
     $('body').append(dancer.$node);
   });
+
+  $("body").on("click", ".dancer", function(event) {
+    $(this).fadeToggle("slow");
+  });
+
+
+//  $("body").css(addBackground);
+
+
 });
+
 
